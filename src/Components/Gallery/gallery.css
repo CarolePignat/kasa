@@ -1,0 +1,26 @@
+/***** base *****/
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/***** utils *****/
+/*** Colors ***/
+/*** Background colors ***/
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 95%;
+  height: auto;
+  margin: 0 auto;
+  padding: 50px;
+  gap: 60px;
+  background-color: #F6F6F6;
+  border-radius: 25px;
+}/*# sourceMappingURL=gallery.css.map */

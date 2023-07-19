@@ -1,0 +1,59 @@
+/***** base *****/
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/***** utils *****/
+/*** Colors ***/
+/*** Background colors ***/
+.carousel {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 415px;
+  margin: 0 auto;
+}
+.carousel__pictures {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.carousel__arrowForward {
+  position: absolute;
+  width: 47px;
+  height: 79px;
+  right: 23px;
+  top: 50%;
+  color: #FFFFFF;
+  transform: translate(0, -50%);
+  z-index: 1;
+  cursor: pointer;
+}
+.carousel__arrowBack {
+  position: absolute;
+  width: 47px;
+  height: 79px;
+  left: 23px;
+  top: 50%;
+  color: #FFFFFF;
+  transform: translate(0, -50%);
+  z-index: 1;
+  cursor: pointer;
+}
+.carousel__slideCounter {
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+  left: 50%;
+  bottom: 25px;
+}/*# sourceMappingURL=carousel.css.map */

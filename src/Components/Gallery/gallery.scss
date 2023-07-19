@@ -1,0 +1,15 @@
+@import "../../Sass/main.scss";
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 95%;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px;
+    gap: 60px;
+    background-color: $secondary-color;
+    border-radius: 25px;
+}

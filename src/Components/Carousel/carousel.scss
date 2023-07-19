@@ -1,0 +1,50 @@
+@import "../../Sass/main.scss";
+
+.carousel {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 415px;
+    margin: 0 auto;
+
+    &__pictures {
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+        object-fit: cover;
+    }
+
+    &__arrowForward {
+        position: absolute;
+        width: 47px;
+        height: 79px;
+        right: 23px;
+        top: 50%;
+        color: $tertiary-color;
+        transform: translate(0, -50%);
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    &__arrowBack {
+        position: absolute;
+        width: 47px;
+        height: 79px;
+        left: 23px;
+        top: 50%;
+        color: $tertiary-color;
+        transform: translate(0, -50%);
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    &__slideCounter {
+        position: absolute;
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 18px;
+        color: $tertiary-color;
+        left: 50%;
+        bottom: 25px;
+    }
+}

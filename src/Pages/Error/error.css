@@ -1,0 +1,44 @@
+/***** base *****/
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/***** utils *****/
+/*** Colors ***/
+/*** Background colors ***/
+.error {
+  font-family: "Montserrat", sans-serif;
+  color: #FF6060;
+}
+.error__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 288px;
+  margin-top: 169px;
+  margin-bottom: 0;
+}
+.error__subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 36px;
+  margin-top: 66px;
+  margin-bottom: 0;
+}
+.error__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FF6060;
+  margin-top: 182px;
+  margin-bottom: 0;
+}/*# sourceMappingURL=error.css.map */

@@ -1,0 +1,21 @@
+/***** base *****/
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/***** utils *****/
+/*** Colors ***/
+/*** Background colors ***/
+.about__banner {
+  margin-top: 44px;
+}
+
+.about__collapse {
+  margin-top: 31px;
+}/*# sourceMappingURL=about.css.map */

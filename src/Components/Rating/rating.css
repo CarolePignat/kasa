@@ -1,0 +1,19 @@
+/***** base *****/
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/***** utils *****/
+/*** Colors ***/
+/*** Background colors ***/
+.starRating__stars {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}/*# sourceMappingURL=rating.css.map */

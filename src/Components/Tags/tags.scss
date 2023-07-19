@@ -1,0 +1,21 @@
+@import "../../Sass/main.scss";
+
+
+.tags {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 115px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: $primary-color;
+    margin-right: 10px;
+    padding: 5px 15px;
+
+    &__text {
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 14px;
+        color: $tertiary-color;
+    }
+}

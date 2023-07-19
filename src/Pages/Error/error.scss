@@ -1,0 +1,36 @@
+@import "../../Sass/main.scss";
+
+
+.error {
+    font-family: $font-family;
+    color: $primary-color;
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 288px;
+        margin-top: 169px;
+        margin-bottom: 0;
+    }
+
+    &__subtitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        font-size: 36px;
+        margin-top: 66px;
+        margin-bottom: 0;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $primary-color;
+        margin-top: 182px;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,28 @@
+@import "../../Sass//main.scss";
+
+
+.host {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 40px;
+
+    &__name {
+        text-align: right;
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 18px;
+        color: $primary-color;
+        margin-right: 15px;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    &__picture {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+    }
+}

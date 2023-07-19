@@ -1,0 +1,46 @@
+/***** base *****/
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/***** utils *****/
+/*** Colors ***/
+/*** Background colors ***/
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 95%;
+  height: 68px;
+  margin: 0 auto;
+}
+.header__logo {
+  width: 210px;
+}
+.header__navbar {
+  display: flex;
+  justify-content: flex-end;
+  width: 309px;
+}
+.header__navbar li {
+  display: inline-flex;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  color: #FF6060;
+}
+.header__navbar__menu {
+  display: flex;
+  align-items: center;
+  height: 34px;
+  gap: 57px;
+}
+.header__navbar .nav-active {
+  display: flex;
+  text-decoration: underline;
+  color: #FF6060;
+}/*# sourceMappingURL=header.css.map */

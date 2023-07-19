@@ -1,0 +1,21 @@
+/***** base *****/
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/***** utils *****/
+/*** Colors ***/
+/*** Background colors ***/
+.home__banner {
+  margin-top: 63px;
+}
+
+.home__gallery {
+  margin-top: 43px;
+}/*# sourceMappingURL=home.css.map */
