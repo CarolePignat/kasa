@@ -7,6 +7,10 @@
     align-items: center;
     margin-top: 40px;
 
+    @include large {
+        margin-top: 16px;
+    }
+
     &__name {
         text-align: right;
         font-family: $font-family;
@@ -14,6 +18,11 @@
         font-size: 18px;
         color: $primary-color;
         margin-right: 15px;
+
+        @include small {
+            font-size: 12px;
+            margin-right: 10px;
+        }
 
         p {
             margin: 0;
@@ -24,5 +33,10 @@
         width: 64px;
         height: 64px;
         border-radius: 50%;
+
+        @include small {
+            width: 32px;
+            height: 32px;
+        }
     }
 }

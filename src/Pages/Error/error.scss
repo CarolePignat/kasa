@@ -13,6 +13,15 @@
         font-size: 288px;
         margin-top: 169px;
         margin-bottom: 0;
+
+        @include large {
+            font-size: 192px;
+        }
+
+        @include small {
+            font-size: 96px;
+            margin-top: 195px;
+        }
     }
 
     &__subtitle {
@@ -23,6 +32,16 @@
         font-size: 36px;
         margin-top: 66px;
         margin-bottom: 0;
+
+        @include large {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        @include small {
+            font-size: 18px;
+            margin: 3% 12% 0 12%;
+        }
     }
 
     &__link {
@@ -32,5 +51,10 @@
         color: $primary-color;
         margin-top: 182px;
         margin-bottom: 0;
+
+        @include small {
+            font-size: 14px;
+            margin-top: 133px;
+        }
     }
 }

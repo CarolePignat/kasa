@@ -23,12 +23,28 @@
         color: $tertiary-color;
         border-radius: 10px;
 
+        @include small {
+            height: 30px;
+            font-size: 13px;
+            padding: 0 12px;
+        }
+
         .arrow_up {
             transform: rotate(180deg);
+
+            @include small {
+                width: 16px;
+                height: 9px;
+            }
         }
 
         .arrow_down {
             transform: rotate(0deg);
+
+            @include small {
+                width: 16px;
+                height: 9px;
+            }
         }
     }
 
@@ -47,11 +63,21 @@
         transition: all 0.3s ease-in-out;
         opacity: 0.8;
 
+        @include small {
+            font-size: 12px;
+            padding: 15px 12px;
+            margin-bottom: 20px;
+        }
+
         &__hidden {
             height: 31px;
             visibility: hidden;
             transition: all 0.3s ease-in-out;
             opacity: 0;
+
+            @include small {
+                height: 20px;
+            }
         }
     }
 }

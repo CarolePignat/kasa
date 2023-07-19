@@ -4,6 +4,11 @@ body {
   margin: 0 auto;
   padding-top: 40px;
 }
+@media screen and (max-width: 550px) {
+  body {
+    padding-top: 20px;
+  }
+}
 
 * {
   box-sizing: border-box;
@@ -12,10 +17,27 @@ body {
 /***** utils *****/
 /*** Colors ***/
 /*** Background colors ***/
+/***** Breakpoints - Media Queries *****/
 .home__banner {
   margin-top: 63px;
+}
+@media screen and (max-width: 550px) {
+  .home__banner {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .home__banner > .banner {
+    height: 111px;
+  }
 }
 
 .home__gallery {
   margin-top: 43px;
+}
+@media screen and (max-width: 768px) {
+  .home__gallery {
+    margin-top: 30px;
+  }
 }/*# sourceMappingURL=home.css.map */

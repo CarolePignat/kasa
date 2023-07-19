@@ -5,4 +5,14 @@
     width: 24px;
     height: 24px;
     margin-right: 10px;
+
+    @include large {
+        margin-top: 24px;
+    }
+
+    @include small {
+        width: 13px;
+        height: 13px;
+        margin-right: 5px;
+    }
 }

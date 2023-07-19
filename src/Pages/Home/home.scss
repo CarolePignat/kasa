@@ -3,8 +3,24 @@
 
 .home__banner {
     margin-top: 63px;
+
+    @include small {
+        margin-top: 16px;
+    }
 }
+
+.home__banner > .banner {
+
+    @include small {
+        height: 111px;
+    }
+}
+
 
 .home__gallery {
     margin-top: 43px;
+
+    @include medium {
+        margin-top: 30px;
+    }
 }

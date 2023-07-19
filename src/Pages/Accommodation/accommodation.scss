@@ -13,6 +13,10 @@
         display: flex;
         justify-content: space-between;
 
+        @include large {
+            flex-direction: column;
+        }
+
         &__infos {
             display: flex;
             flex-direction: column;
@@ -25,6 +29,15 @@
                 font-weight: 36px;
                 line-height: 51px;
                 margin: 0;
+
+                @include x-large {
+                    font-size: 27px;
+                }
+
+                @include small {
+                    font-size: 18px;
+                    line-height: 26px;
+                }
             }
 
             &__location {
@@ -32,16 +45,42 @@
                 font-size: 18px;
                 line-height: 26px;
                 margin: 0;
+
+                @include small {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
             }
 
             &__tags {
                 margin-top: 30px;
+
+                @include small {
+                    margin-top: 10px;
+                }
             }
         }
 
         &__host-rating > .__infos {
             display: flex;
             flex-direction: column;
+        }
+
+        &__host-rating > .host {
+
+            @include large {
+                justify-content: flex-start;
+            }
+        }
+
+        &__host-rating {
+
+            @include large {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-content: baseline;
+            }
         }
 
         &__host-rating__rate {
@@ -55,10 +94,28 @@
         width: 100%;
         margin-top: 24px;
         gap: 76px;
+
+        @include x-large {
+            gap: 30px;
+        }
+
+        @include large {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        @include small {
+            margin-top: 0;
+        }
     }
 
     &__collapse > .collapse {
         width: 50%;
         list-style: none;
+
+        @include large {
+            width: 100%;
+        }
     }
 }

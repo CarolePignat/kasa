@@ -16,7 +16,7 @@ function Carousel({ slides }) {
     // "0": vers le 1er slide
     // "currentIndex + 1": on passe au slide suivant
     const nextSlide = () => {
-        setCurrentIndex(currentIndex === - 1 ? 0 : currentIndex + 1);
+        setCurrentIndex(currentIndex === length - 1 ? 0 : currentIndex + 1);
     };
 
 

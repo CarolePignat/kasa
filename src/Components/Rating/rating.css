@@ -4,6 +4,11 @@ body {
   margin: 0 auto;
   padding-top: 40px;
 }
+@media screen and (max-width: 550px) {
+  body {
+    padding-top: 20px;
+  }
+}
 
 * {
   box-sizing: border-box;
@@ -12,8 +17,21 @@ body {
 /***** utils *****/
 /*** Colors ***/
 /*** Background colors ***/
+/***** Breakpoints - Media Queries *****/
 .starRating__stars {
   width: 24px;
   height: 24px;
   margin-right: 10px;
+}
+@media screen and (max-width: 992px) {
+  .starRating__stars {
+    margin-top: 24px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .starRating__stars {
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+  }
 }/*# sourceMappingURL=rating.css.map */

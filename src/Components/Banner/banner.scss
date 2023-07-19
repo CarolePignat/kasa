@@ -9,6 +9,10 @@
     margin: 0 auto;
     overflow: hidden;
 
+    @include small {
+        border-radius: 10px;
+    }
+
     &__overlay {
         position: absolute;
         width: 100%;
@@ -17,6 +21,10 @@
         border-radius: 25px;
         top: 0;
         left: 0;
+
+        @include small {
+            border-radius: 10px;
+        }
     }
 
     &__picture {
@@ -25,6 +33,10 @@
         border-radius: 25px;
         object-fit: cover;
         object-position: center;
+
+        @include small {
+            border-radius: 10px;
+        }
     }
 
     &__text {
@@ -38,5 +50,20 @@
         bottom: 0;
         right: 0;
         margin-top: 78px;
+
+        @include medium {
+            height: 52px;
+            font-size: 30px;
+            margin-top: 85px;
+            margin-bottom: 85px;
+        }
+
+        @include small {
+            text-align: left;
+            width: 240px;
+            font-size: 24px;
+            margin-top: 25px;
+            padding-left: 16px;
+        }
     }
 }

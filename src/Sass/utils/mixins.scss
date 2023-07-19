@@ -1,0 +1,52 @@
+/***** Breakpoints - Media Queries *****/
+
+// $breakpoints: (
+//     mobile: 550px,
+//     tablet: 768px,
+//     desktop: 992px,
+//     l-desktop: 1200px
+// );
+
+
+$mobile: 550px;
+$tablet: 768px;
+$desktop: 992px;
+$l-desktop: 1200px;
+
+
+// Mixins
+
+@mixin small {
+    @media screen and (max-width: $mobile) {
+        & {
+            @content;
+        }
+    }
+}
+
+
+@mixin medium {
+    @media screen and (max-width: $tablet) {
+        & {
+            @content;
+        }
+    }
+}
+
+
+@mixin large {
+    @media screen and (max-width: $desktop) {
+        & {
+            @content;
+        }
+    }
+}
+
+
+@mixin x-large {
+    @media screen and (max-width: $l-desktop) {
+        & {
+            @content;
+        }
+    }
+}

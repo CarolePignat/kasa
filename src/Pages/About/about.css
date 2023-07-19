@@ -4,6 +4,11 @@ body {
   margin: 0 auto;
   padding-top: 40px;
 }
+@media screen and (max-width: 550px) {
+  body {
+    padding-top: 20px;
+  }
+}
 
 * {
   box-sizing: border-box;
@@ -12,10 +17,21 @@ body {
 /***** utils *****/
 /*** Colors ***/
 /*** Background colors ***/
+/***** Breakpoints - Media Queries *****/
 .about__banner {
   margin-top: 44px;
+}
+@media screen and (max-width: 550px) {
+  .about__banner {
+    margin-top: 17px;
+  }
 }
 
 .about__collapse {
   margin-top: 31px;
+}
+@media screen and (max-width: 550px) {
+  .about__collapse {
+    margin-top: 19px;
+  }
 }/*# sourceMappingURL=about.css.map */

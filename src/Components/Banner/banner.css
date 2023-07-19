@@ -4,6 +4,11 @@ body {
   margin: 0 auto;
   padding-top: 40px;
 }
+@media screen and (max-width: 550px) {
+  body {
+    padding-top: 20px;
+  }
+}
 
 * {
   box-sizing: border-box;
@@ -12,6 +17,7 @@ body {
 /***** utils *****/
 /*** Colors ***/
 /*** Background colors ***/
+/***** Breakpoints - Media Queries *****/
 .banner {
   position: relative;
   width: 95%;
@@ -19,6 +25,11 @@ body {
   border-radius: 25px;
   margin: 0 auto;
   overflow: hidden;
+}
+@media screen and (max-width: 550px) {
+  .banner {
+    border-radius: 10px;
+  }
 }
 .banner__overlay {
   position: absolute;
@@ -29,6 +40,11 @@ body {
   top: 0;
   left: 0;
 }
+@media screen and (max-width: 550px) {
+  .banner__overlay {
+    border-radius: 10px;
+  }
+}
 .banner__picture {
   width: 100%;
   height: 100%;
@@ -37,6 +53,11 @@ body {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+@media screen and (max-width: 550px) {
+  .banner__picture {
+    border-radius: 10px;
+  }
 }
 .banner__text {
   position: absolute;
@@ -49,4 +70,21 @@ body {
   bottom: 0;
   right: 0;
   margin-top: 78px;
+}
+@media screen and (max-width: 768px) {
+  .banner__text {
+    height: 52px;
+    font-size: 30px;
+    margin-top: 85px;
+    margin-bottom: 85px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .banner__text {
+    text-align: left;
+    width: 240px;
+    font-size: 24px;
+    margin-top: 25px;
+    padding-left: 16px;
+  }
 }/*# sourceMappingURL=banner.css.map */

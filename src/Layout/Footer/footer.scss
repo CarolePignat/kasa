@@ -11,6 +11,10 @@
     background-color: $bg-footer-color;
     margin-top: 150px;
 
+    @include small {
+        margin-top: 50px;
+    }
+
     &__logo {
         width: 122px;
         height: 39px;
@@ -24,5 +28,11 @@
         color: $tertiary-color;
         margin-top: 29px;
         margin-bottom: 29px;
+
+        @include small {
+            font-size: 12px;
+            margin-top: 46px;
+            margin-bottom: 62px;
+        }
     }
 }

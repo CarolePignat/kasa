@@ -12,10 +12,19 @@
     margin-right: 10px;
     padding: 5px 15px;
 
+    @include small {
+        min-width: 84px;
+        height: 18px;
+    }
+
     &__text {
         font-family: $font-family;
         font-weight: 500;
         font-size: 14px;
         color: $tertiary-color;
+
+        @include small {
+            font-size: 10px;
+        }
     }
 }

@@ -4,6 +4,11 @@ body {
   margin: 0 auto;
   padding-top: 40px;
 }
+@media screen and (max-width: 550px) {
+  body {
+    padding-top: 20px;
+  }
+}
 
 * {
   box-sizing: border-box;
@@ -12,6 +17,7 @@ body {
 /***** utils *****/
 /*** Colors ***/
 /*** Background colors ***/
+/***** Breakpoints - Media Queries *****/
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -23,4 +29,17 @@ body {
   gap: 60px;
   background-color: #F6F6F6;
   border-radius: 25px;
+}
+@media screen and (max-width: 1375px) {
+  .gallery {
+    padding: 30px 20px;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gallery {
+    background-color: #FFFFFF;
+    padding: 0;
+    gap: 20px;
+  }
 }/*# sourceMappingURL=gallery.css.map */

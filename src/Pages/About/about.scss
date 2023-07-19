@@ -3,8 +3,16 @@
 
 .about__banner {
     margin-top: 44px;
+
+    @include small {
+        margin-top: 17px;
+    }
 }
 
 .about__collapse {
     margin-top: 31px;
+
+    @include small {
+        margin-top: 19px;
+    }
 }

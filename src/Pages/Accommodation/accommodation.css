@@ -4,6 +4,11 @@ body {
   margin: 0 auto;
   padding-top: 40px;
 }
+@media screen and (max-width: 550px) {
+  body {
+    padding-top: 20px;
+  }
+}
 
 * {
   box-sizing: border-box;
@@ -12,6 +17,7 @@ body {
 /***** utils *****/
 /*** Colors ***/
 /*** Background colors ***/
+/***** Breakpoints - Media Queries *****/
 .accommodation {
   max-width: 95%;
   margin: 0 auto;
@@ -22,6 +28,11 @@ body {
 .accommodation__content {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 992px) {
+  .accommodation__content {
+    flex-direction: column;
+  }
 }
 .accommodation__content__infos {
   display: flex;
@@ -36,18 +47,53 @@ body {
   line-height: 51px;
   margin: 0;
 }
+@media screen and (max-width: 1200px) {
+  .accommodation__content__infos__title {
+    font-size: 27px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .accommodation__content__infos__title {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
 .accommodation__content__infos__location {
   font-weight: 500;
   font-size: 18px;
   line-height: 26px;
   margin: 0;
 }
+@media screen and (max-width: 550px) {
+  .accommodation__content__infos__location {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
 .accommodation__content__infos__tags {
   margin-top: 30px;
+}
+@media screen and (max-width: 550px) {
+  .accommodation__content__infos__tags {
+    margin-top: 10px;
+  }
 }
 .accommodation__content__host-rating > .__infos {
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 992px) {
+  .accommodation__content__host-rating > .host {
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 992px) {
+  .accommodation__content__host-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-content: baseline;
+  }
 }
 .accommodation__content__host-rating__rate {
   margin-top: 27px;
@@ -59,7 +105,29 @@ body {
   margin-top: 24px;
   gap: 76px;
 }
+@media screen and (max-width: 1200px) {
+  .accommodation__collapse {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .accommodation__collapse {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .accommodation__collapse {
+    margin-top: 0;
+  }
+}
 .accommodation__collapse > .collapse {
   width: 50%;
   list-style: none;
+}
+@media screen and (max-width: 992px) {
+  .accommodation__collapse > .collapse {
+    width: 100%;
+  }
 }/*# sourceMappingURL=accommodation.css.map */

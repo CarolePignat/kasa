@@ -4,6 +4,11 @@ body {
   margin: 0 auto;
   padding-top: 40px;
 }
+@media screen and (max-width: 550px) {
+  body {
+    padding-top: 20px;
+  }
+}
 
 * {
   box-sizing: border-box;
@@ -12,11 +17,17 @@ body {
 /***** utils *****/
 /*** Colors ***/
 /*** Background colors ***/
+/***** Breakpoints - Media Queries *****/
 .host {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   margin-top: 40px;
+}
+@media screen and (max-width: 992px) {
+  .host {
+    margin-top: 16px;
+  }
 }
 .host__name {
   text-align: right;
@@ -26,6 +37,12 @@ body {
   color: #FF6060;
   margin-right: 15px;
 }
+@media screen and (max-width: 550px) {
+  .host__name {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+}
 .host__name p {
   margin: 0;
 }
@@ -33,4 +50,10 @@ body {
   width: 64px;
   height: 64px;
   border-radius: 50%;
+}
+@media screen and (max-width: 550px) {
+  .host__picture {
+    width: 32px;
+    height: 32px;
+  }
 }/*# sourceMappingURL=host.css.map */

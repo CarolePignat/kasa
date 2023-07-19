@@ -4,6 +4,11 @@ body {
   margin: 0 auto;
   padding-top: 40px;
 }
+@media screen and (max-width: 550px) {
+  body {
+    padding-top: 20px;
+  }
+}
 
 * {
   box-sizing: border-box;
@@ -12,6 +17,7 @@ body {
 /***** utils *****/
 /*** Colors ***/
 /*** Background colors ***/
+/***** Breakpoints - Media Queries *****/
 .header {
   display: flex;
   justify-content: space-between;
@@ -19,8 +25,18 @@ body {
   height: 68px;
   margin: 0 auto;
 }
+@media screen and (max-width: 550px) {
+  .header {
+    height: 47px;
+  }
+}
 .header__logo {
   width: 210px;
+}
+@media screen and (max-width: 550px) {
+  .header__logo {
+    width: 145px;
+  }
 }
 .header__navbar {
   display: flex;
@@ -33,11 +49,22 @@ body {
   font-size: 24px;
   color: #FF6060;
 }
+@media screen and (max-width: 550px) {
+  .header__navbar li {
+    font-size: 12px;
+  }
+}
 .header__navbar__menu {
   display: flex;
   align-items: center;
   height: 34px;
   gap: 57px;
+}
+@media screen and (max-width: 550px) {
+  .header__navbar__menu {
+    height: 17px;
+    gap: 10px;
+  }
 }
 .header__navbar .nav-active {
   display: flex;

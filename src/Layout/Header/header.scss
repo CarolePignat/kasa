@@ -8,8 +8,16 @@
     height: 68px;
     margin: 0 auto;
 
+    @include small {
+        height: 47px;
+    }
+
     &__logo {
         width: 210px;
+
+        @include small {
+            width: 145px;
+        }
     }
 
     &__navbar {
@@ -22,6 +30,10 @@
             font-family: $font-family;
             font-size: 24px;
             color: $primary-color;
+
+            @include small {
+                font-size: 12px;
+            }
         }
 
         &__menu {
@@ -29,6 +41,11 @@
             align-items: center;
             height: 34px;
             gap: 57px;
+
+            @include small {
+                height: 17px;
+                gap: 10px;
+            }
         }
 
         .nav-active {

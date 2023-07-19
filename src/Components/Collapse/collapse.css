@@ -4,6 +4,11 @@ body {
   margin: 0 auto;
   padding-top: 40px;
 }
+@media screen and (max-width: 550px) {
+  body {
+    padding-top: 20px;
+  }
+}
 
 * {
   box-sizing: border-box;
@@ -12,6 +17,7 @@ body {
 /***** utils *****/
 /*** Colors ***/
 /*** Background colors ***/
+/***** Breakpoints - Media Queries *****/
 .collapse {
   position: relative;
   display: flex;
@@ -34,11 +40,30 @@ body {
   color: #FFFFFF;
   border-radius: 10px;
 }
+@media screen and (max-width: 550px) {
+  .collapse__title {
+    height: 30px;
+    font-size: 13px;
+    padding: 0 12px;
+  }
+}
 .collapse__title .arrow_up {
   transform: rotate(180deg);
 }
+@media screen and (max-width: 550px) {
+  .collapse__title .arrow_up {
+    width: 16px;
+    height: 9px;
+  }
+}
 .collapse__title .arrow_down {
   transform: rotate(0deg);
+}
+@media screen and (max-width: 550px) {
+  .collapse__title .arrow_down {
+    width: 16px;
+    height: 9px;
+  }
 }
 .collapse__content {
   display: flex;
@@ -55,9 +80,21 @@ body {
   transition: all 0.3s ease-in-out;
   opacity: 0.8;
 }
+@media screen and (max-width: 550px) {
+  .collapse__content {
+    font-size: 12px;
+    padding: 15px 12px;
+    margin-bottom: 20px;
+  }
+}
 .collapse__content__hidden {
   height: 31px;
   visibility: hidden;
   transition: all 0.3s ease-in-out;
   opacity: 0;
+}
+@media screen and (max-width: 550px) {
+  .collapse__content__hidden {
+    height: 20px;
+  }
 }/*# sourceMappingURL=collapse.css.map */
