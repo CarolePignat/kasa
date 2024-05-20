@@ -18,21 +18,50 @@ Développer la nouvelle plateforme web de la société Kasa, leader dans la loca
         * Les images sont coupées et centrées dans le cadre de l'image
 
 * Composant *Collapse* :
-    * Par défaut, les *Collapses* sont fermées à l'initialisation de la page
+    * Par défaut, les *Collapses* sont fermés à l'initialisation de la page
     * Si le *Collapse* est ouvert : au clic, il se ferme
     * Si le *Collapse* est fermé : au clic, il s'ouvre
     
 ## Spécificités techniques
 
+### Outils utilisés
 
+* **Figma** : maquettes (fournies)
+* **create-react-app** : création du projet
+* **React Router V6** : routing
+* **React v.18.2.0** 
+* **Sass** : styling
+* **VSCode** : éditeur de code
+* **GitHub** : hébergement du projet
+* Pas de librairie React externe
 
-### Getting Started with Create React App
+### React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* Éléments React à utiliser :
+    * Découpage en composants modulaires et réutilisables
+    * Un composant par fichier
+    * Structure logique des différents fichiers
+    * Utilisation des *props* entre les composants
+    * Utilisation du *state* dans les composants lorsque c'est nécessaire
+    * Gestion des éléments
+    * Utilisation des *listes* en itérant dessus avec **map**, par exemple
+    * Utilisation de composants fonctionnels fortement recommandée
 
-In the project directory, you can run:
+### React Router 
 
-### `npm start`
+* La gestion des paramètres de routes est gérée par React Router dans l'URL pour récupérer les informations de chaque logement
+* Une page par route
+* Une page 404 est renvoyée pour chaque route inexistante, ou si une valeur présente dans l'URL ne fait pas partie des données renseignées
+* La logique du routeur est réunie dans un seul fichier
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Le code ne doit pas produire d'erreur ou de warning dans la console
+
+### Lancement du projet
+
+Dans le dossier du projet, lancer :
+
+`npm start`
+
+Pour l'ouvrir dans le navigateur :
+
+* Ouvrir [http://localhost:3000](http://localhost:3000)
