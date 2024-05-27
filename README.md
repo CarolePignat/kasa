@@ -1,4 +1,4 @@
-# CarolePignat_7_28072023
+# Kasa
 
 ### Projet 7 | Parcours "Développeur web" OpenClassrooms - Créez une application web de location immobilière avec React
 
