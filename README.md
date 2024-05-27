@@ -24,7 +24,7 @@ Développer la nouvelle plateforme web de la société Kasa, leader dans la loca
     
 ## Spécificités techniques
 
-### Outils utilisés
+### Technologies utilisées
 
 * **Figma** : maquettes (fournies)
 * **create-react-app** : création du projet
